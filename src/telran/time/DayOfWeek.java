@@ -33,12 +33,12 @@ public enum DayOfWeek {
 		return res;
 	}
 
-	public static int between(DayOfWeek thu2, DayOfWeek mon2) {
-		// TODO Auto-generated method stub
-		return 0;
+	public static int between(DayOfWeek dayOfWeek1, DayOfWeek dayOfWeek2) {
+		int res = dayOfWeek2.ordinal() - dayOfWeek1.ordinal();
+		if (res <= 0) {
+			res += 7;
+		}
+		return res;
 	}
-	
-	
-	
 	
 }
